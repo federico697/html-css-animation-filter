@@ -60,12 +60,17 @@
 }
 
 /* esercizio 7 */
+.ex-7-img {
+  transition: 2s;
+}
+.ex-7-img:hover {
+  filter: grayscale(50%) sepia(75%);
+}
 
 /* esercizio 8 */
 
 .ex-8-img:hover{
-  filter: invert(100%);
-  filter: sepia(50%);
+  filter: invert(100%) sepia(50%);
   border-radius: 30px;
 }
 
@@ -76,4 +81,31 @@
   filter: sepia(50%);
   border-radius: 30px;
   scale: 1.5;
+}
+
+/* esercizio 10 */
+.ex-10-icon {
+  animation: ruota 1s linear infinite;
+}
+ @keyframes ruota {
+  0% {
+      transform: rotate(1turn);
+  } 
+}
+
+/* esercizio 11 */
+
+.ex-11-icon:hover {
+  animation: ruota-orario 2s linear;
+}
+@keyframes ruota-orario {
+  0% {
+      transform: rotate(0);
+  }
+  90% {
+      transform: rotate(315deg);
+  }
+  100% {
+      transform: rotate(0);
+  }
 }
